@@ -1,0 +1,89 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightBlue: #DBECF1;
+    --LightGrey: #D9D9D9;
+    --DarkRed: #B83636;
+    --DarkBlue: #3699B8;
+    --Green: #8EB836;
+    --Black: hsl(0,0,0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    height: 10vh;
+    background-color: var(--DarkBlue);
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .icon {
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    margin: 0px 20px;
+    font-size: 1.2rem;
+    color: var(--Black);
+    text-decoration: none;
+}
+
+
+/***********************************/
+
+
+#banner-in {
+    height: 60vh;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#banner-in div {
+    width: 65vw;
+    margin: 20px;
+    text-align: center;
+}
+
+#banner-in h3 {
+    font-size: 2.5rem;
+}
+
+#banner-in p {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+button {
+    background-color: var(--DarkBlue);
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
