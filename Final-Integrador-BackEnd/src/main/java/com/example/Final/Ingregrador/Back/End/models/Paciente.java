@@ -1,6 +1,6 @@
 package com.example.Final.Ingregrador.Back.End.models;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Paciente {
 

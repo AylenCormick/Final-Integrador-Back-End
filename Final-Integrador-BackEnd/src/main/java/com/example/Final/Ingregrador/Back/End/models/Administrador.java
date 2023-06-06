@@ -1,6 +1,7 @@
 package com.example.Final.Ingregrador.Back.End.models;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Administrador {
 
@@ -9,7 +10,7 @@ public class Administrador {
     private String apellido;
     private Domicilio domicilio;
     private Integer dni;
-    private LocalDate fechaAlta;
+    private Date fechaAlta;
 
 
     // CONSTRUCTORES
@@ -17,7 +18,7 @@ public class Administrador {
     public Administrador() {
     }
 
-    public Administrador(String nombre, String apellido, Domicilio domicilio, Integer dni, LocalDate fechaAlta) {
+    public Administrador(String nombre, String apellido, Domicilio domicilio, Integer dni, Date fechaAlta) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.domicilio = domicilio;
@@ -48,7 +49,7 @@ public class Administrador {
         return dni;
     }
 
-    public LocalDate getFechaAlta() {
+    public Date getFechaAlta() {
         return fechaAlta;
     }
 
@@ -75,7 +76,14 @@ public class Administrador {
         this.dni = dni;
     }
 
-    public void setFechaAlta(LocalDate fechaAlta) {
+    public void setFechaAlta(Date fechaAlta) {
         this.fechaAlta = fechaAlta;
+    }
+
+
+    // TOSTRING
+
+    public String domicilioToString() {
+        return domicilio.getCalle() + " " + domicilio.getNumero() + " " + domicilio.getLocalidad() + " " + domicilio.getProvincia();
     }
 }
