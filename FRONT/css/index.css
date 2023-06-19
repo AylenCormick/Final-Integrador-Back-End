@@ -1,0 +1,35 @@
+
+#banner-in {
+    height: 60vh;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#banner-in div {
+    width: 65vw;
+    margin: 20px;
+    text-align: center;
+}
+
+#banner-in h3 {
+    font-size: 2.5rem;
+}
+
+#banner-in p {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+button {
+    background-color: var(--DarkBlue);
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+

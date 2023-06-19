@@ -5,24 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e3b1a01-638d-430c-af77-0d823ec3a6b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/OdontologoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/PacienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/TurnoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/dto/OdontologoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/dto/PacienteDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/dto/TurnoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/entities/Domicilio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/entities/Odontologo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/entities/Paciente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/entities/Turno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/OdontologoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/PacienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/TurnoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/OdontologoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/PacienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/TurnoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/PacienteServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Final Ingregrador Back End.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,15 +41,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Usuario/Documents/Aylen/TECH DEVELOPER/BACKEND/CLASE 33/profesor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Documents/Aylen/TECH DEVELOPER/BACKEND/CLASE 33/profesor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -77,18 +59,16 @@
       <recent name="com.example.FinalIntegradorBackEnd.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PacienteServiceTest.eliminarPacienteTest">
-    <configuration name="PacienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.FinalIntegradorBackEndApplication">
+    <configuration name="FinalIntegradorBackEndApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.FinalIntegradorBackEnd.FinalIntegradorBackEndApplication" />
       <module name="Final-Integrador-Back-End" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.FinalIntegradorBackEnd.services.*" />
+          <option name="PATTERN" value="com.example.FinalIntegradorBackEnd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.FinalIntegradorBackEnd.services" />
-      <option name="MAIN_CLASS_NAME" value="com.example.FinalIntegradorBackEnd.services.PacienteServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FinalIntegradorBackEndApplication" />
         <item itemvalue="JUnit.PacienteServiceTest.eliminarPacienteTest" />
         <item itemvalue="JUnit.PacienteServiceTest.registrarPacientesTest" />
         <item itemvalue="JUnit.PacienteServiceTest.listarPacientesTest" />
         <item itemvalue="JUnit.PacienteServiceTest.buscarPacienteIdTest" />
-        <item itemvalue="JUnit.PacienteServiceTest" />
       </list>
     </recent_temporary>
   </component>
