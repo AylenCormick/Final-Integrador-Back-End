@@ -35,6 +35,50 @@ public class TurnoServiceTest {
     private OdontologoService odontologoService;
 
 
+    @Before
+    public void agregarTurnosBefore() {
+        /////// TURNO UNO ///////
+        Paciente paciente = new Paciente();
+        paciente.setNombre("Pepe");
+        paciente.setApellido("Perez");
+        paciente.setDni("12121212");
+        Paciente pc = pacienteService.registrarPaciente(paciente);
+
+        Odontologo odontologo = new Odontologo("Pablo", "Pablito", "45456565");
+        Odontologo od = odontologoService.registrarOdontologo(odontologo);
+
+        Turno turno = new Turno(pc, od, new Date(2023,10,21));
+        turnoService.registrarTurno(turno);
+
+        /////// TURNO DOS ///////
+
+        Paciente pacienteDos = new Paciente();
+        pacienteDos.setNombre("Raul");
+        pacienteDos.setApellido("Ramirez");
+        pacienteDos.setDni("87878787");
+        Paciente pcd = pacienteService.registrarPaciente(pacienteDos);
+
+        Odontologo odontologoDos = new Odontologo("Juana", "Juanita", "00223344");
+        Odontologo odd = odontologoService.registrarOdontologo(odontologoDos);
+
+        Turno turnoDos = new Turno(pcd, odd, new Date(2023,10,22));
+        turnoService.registrarTurno(turnoDos);
+
+        /////// TURNO TRES ///////
+
+        Paciente pacienteTres = new Paciente();
+        pacienteTres.setNombre("Ana");
+        pacienteTres.setApellido("Maria");
+        pacienteTres.setDni("11111111");
+        Paciente pct = pacienteService.registrarPaciente(pacienteTres);
+
+        Odontologo odontologoTres = new Odontologo("Leon", "Leonardo", "99995555");
+        Odontologo odt = odontologoService.registrarOdontologo(odontologoTres);
+
+        Turno turnoTres = new Turno(pct, odt, new Date(2023,10,23));
+        turnoService.registrarTurno(turnoTres);
+    }
+
     @Test
     public void registrarTurnoTest() {
         Paciente paciente = new Paciente();

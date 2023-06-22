@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e3b1a01-638d-430c-af77-0d823ec3a6b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/OdontologoServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/TurnoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FRONT/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/../FRONT/css/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FRONT/pages/registro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FRONT/scripts/registro.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/FinalIntegradorBackEndApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/FinalIntegradorBackEndApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/errors.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/OdontologoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/OdontologoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/PacienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/OdontologoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/OdontologoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/repository/PacienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/OdontologoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/OdontologoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/PacienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/TurnoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/services/TurnoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/TurnoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/FinalIntegradorBackEnd/controllers/TurnoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/OdontologoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/OdontologoServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/PacienteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/PacienteServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/TurnoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/FinalIntegradorBackEnd/services/TurnoServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,12 +63,15 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\Aylen\TECH DEVELOPER\BACKEND\FINAL INTEGRADOR BACK END\Final-Integrador-Back-End" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.FinalIntegradorBackEnd.services" />
       <recent name="com.example.FinalIntegradorBackEnd.controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TurnoServiceTest.registrarTurnoTest">
+  <component name="RunManager" selected="Application.FinalIntegradorBackEndApplication">
     <configuration name="FinalIntegradorBackEndApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.FinalIntegradorBackEnd.FinalIntegradorBackEndApplication" />
       <module name="Final-Integrador-Back-End" />
@@ -91,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OdontologoServiceTest.registrarOdontologoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OdontologoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final-Integrador-Back-End" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +95,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.FinalIntegradorBackEnd.services" />
       <option name="MAIN_CLASS_NAME" value="com.example.FinalIntegradorBackEnd.services.OdontologoServiceTest" />
-      <option name="METHOD_NAME" value="registrarOdontologoTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PacienteServiceTest.registrarPacientesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PacienteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final-Integrador-Back-End" />
       <extension name="coverage">
         <pattern>
@@ -117,13 +110,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.FinalIntegradorBackEnd.services" />
       <option name="MAIN_CLASS_NAME" value="com.example.FinalIntegradorBackEnd.services.PacienteServiceTest" />
-      <option name="METHOD_NAME" value="registrarPacientesTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TurnoServiceTest.eliminarTurnoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TurnoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Final-Integrador-Back-End" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +125,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.FinalIntegradorBackEnd.services" />
       <option name="MAIN_CLASS_NAME" value="com.example.FinalIntegradorBackEnd.services.TurnoServiceTest" />
-      <option name="METHOD_NAME" value="eliminarTurnoTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TurnoServiceTest.registrarTurnoTest" />
-        <item itemvalue="JUnit.OdontologoServiceTest.registrarOdontologoTest" />
-        <item itemvalue="JUnit.PacienteServiceTest.registrarPacientesTest" />
         <item itemvalue="Application.FinalIntegradorBackEndApplication" />
-        <item itemvalue="JUnit.TurnoServiceTest.eliminarTurnoTest" />
+        <item itemvalue="JUnit.TurnoServiceTest" />
+        <item itemvalue="JUnit.OdontologoServiceTest" />
+        <item itemvalue="JUnit.PacienteServiceTest" />
+        <item itemvalue="JUnit.TurnoServiceTest.registrarTurnoTest" />
       </list>
     </recent_temporary>
   </component>

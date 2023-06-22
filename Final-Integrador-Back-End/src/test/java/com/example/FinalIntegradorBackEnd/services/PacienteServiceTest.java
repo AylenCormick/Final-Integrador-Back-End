@@ -4,6 +4,7 @@ import com.example.FinalIntegradorBackEnd.dto.PacienteDto;
 import com.example.FinalIntegradorBackEnd.entities.Domicilio;
 import com.example.FinalIntegradorBackEnd.entities.Paciente;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
@@ -13,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.junit.FixMethodOrder;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.sql.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -25,6 +27,33 @@ public class PacienteServiceTest {
 
     @Autowired
     private PacienteService pacienteService;
+
+    @Before
+    public void registrarTurnosBefore() {
+
+        ///// PACIENTE UNO /////
+
+        Domicilio domicilioUno = new Domicilio("Calle falsa", 123, "Una");
+        Paciente paciente = new Paciente();
+        paciente.setNombre("Aylen");
+        paciente.setApellido("Cormick");
+        paciente.setDomicilio(domicilioUno);
+        paciente.setDni("12345678");
+        paciente.setFechaAlta(new Date(2023,6,30));
+        pacienteService.registrarPaciente(paciente);
+
+        ///// PACIENTE DOS /////
+
+        Domicilio domicilioDos = new Domicilio("Av false", 456, "Otra");
+        Paciente pacienteDos = new Paciente();
+        pacienteDos.setNombre("Rocio");
+        pacienteDos.setApellido("Silva");
+        pacienteDos.setDomicilio(domicilioDos);
+        pacienteDos.setDni("87654321");
+        pacienteDos.setFechaAlta(new Date(2023,6,30));
+        pacienteService.registrarPaciente(pacienteDos);
+
+    }
 
     @Test
     public void registrarPacientesTest() {
