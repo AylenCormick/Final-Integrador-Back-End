@@ -22,13 +22,9 @@ public class TurnoService {
     @Autowired
     private TurnoRepository repository;
 
-    public String registrarTurno (Turno turno){
+    public Turno registrarTurno (Turno turno){
 
-        if(repository.save(turno) != null){
-            return "OK";
-        } else {
-            return null;
-        }
+          return repository.save(turno);
 
     }
 
@@ -57,8 +53,9 @@ public class TurnoService {
         }
     }
 
-    public void eliminarTurno(Integer id) {
+    public boolean eliminarTurno(Integer id) {
         repository.deleteById(id);
+        return true;
     }
 
     public Turno actualizarTurno(Turno turno) {

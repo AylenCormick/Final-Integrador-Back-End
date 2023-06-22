@@ -50,6 +50,13 @@ public class OdontologoController {
 
     }
 
+    @GetMapping("buscarpormatricula/{matricula}")
+    public ResponseEntity<Odontologo> buscarOdontologo(@PathVariable String matricula) {
+        Odontologo odontologo = odontologoService.buscarOdontologoMatricula(matricula);
+
+        return ResponseEntity.ok(odontologo);
+    }
+
     @PutMapping("/modificar")
     public ResponseEntity<Odontologo> actualizarOdontologo(@RequestBody Odontologo odontologo) {
         ResponseEntity<Odontologo> response = null;

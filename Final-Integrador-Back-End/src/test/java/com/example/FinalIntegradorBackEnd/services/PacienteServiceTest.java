@@ -32,8 +32,10 @@ public class PacienteServiceTest {
         Paciente paciente = new Paciente();
         paciente.setNombre("Aylen");
         paciente.setApellido("Cormick");
-        String stg = pacienteService.registrarPaciente(paciente);
-        Assertions.assertTrue((stg != null));
+        Paciente pc = pacienteService.registrarPaciente(paciente);
+
+        Assertions.assertTrue((pc != null));
+        Assertions.assertTrue(pc.getId() != null);
     }
 
     @Test

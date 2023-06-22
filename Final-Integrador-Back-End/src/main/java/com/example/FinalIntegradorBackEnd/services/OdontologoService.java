@@ -22,12 +22,8 @@ public class OdontologoService {
     @Autowired
     OdontologoRepository repository;
 
-    public String registrarOdontologo (Odontologo odontologo){
-        if(repository.save(odontologo) != null){
-            return "OK";
-        } else {
-            return null;
-        }
+    public Odontologo registrarOdontologo (Odontologo odontologo){
+        return repository.save(odontologo);
     }
 
     public List<OdontologoDto> listarOdontologos(){
@@ -40,7 +36,7 @@ public class OdontologoService {
         return listaOdontologos.stream().map(odontologo -> mapper.convertValue(odontologo, OdontologoDto.class)).collect(Collectors.toList());
     }
 
-    public Optional<Odontologo> buscarOdontologo(Integer id) {
+    public Optional<OdontologoDto> buscarOdontologo(Integer id) {
         Optional odontologo = repository.findById(id);
 
         ObjectMapper mapper= new ObjectMapper();
@@ -54,8 +50,19 @@ public class OdontologoService {
         }
     }
 
-    public void eliminarOdontologo(Integer id) {
+    public Odontologo buscarOdontologoMatricula(String matricula) {
+        Odontologo odontologo = repository.findOdontologoByMatricula(matricula);
+
+//        ObjectMapper mapper= new ObjectMapper();
+//        mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS,false);
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
+
+    return odontologo;
+    }
+
+    public boolean eliminarOdontologo(Integer id) {
         repository.deleteById(id);
+        return true;
     }
 
     public Odontologo actualizarOdontologo(Odontologo odontologo) {

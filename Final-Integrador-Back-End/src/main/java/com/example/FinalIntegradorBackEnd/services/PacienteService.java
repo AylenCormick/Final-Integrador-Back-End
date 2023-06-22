@@ -19,12 +19,8 @@ public class PacienteService {
     @Autowired
     PacienteRepository repository;
 
-    public String registrarPaciente (Paciente paciente){
-        if(repository.save(paciente) != null){
-            return "OK";
-        } else {
-            return null;
-        }
+    public Paciente registrarPaciente (Paciente paciente){
+        return repository.save(paciente);
     }
 
     public List<PacienteDto> listarPacientes(){
@@ -50,6 +46,16 @@ public class PacienteService {
             return null;
         }
 
+    }
+
+    public Paciente buscarPacienteDni(String dni) {
+        Paciente paciente = repository.findPacienteByDni(dni);
+
+//        ObjectMapper mapper= new ObjectMapper();
+//        mapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS,false);
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
+
+        return paciente;
     }
 
     public boolean eliminarPaciente(Integer id) {

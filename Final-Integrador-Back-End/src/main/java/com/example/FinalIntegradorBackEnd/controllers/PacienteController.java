@@ -45,7 +45,13 @@ public class PacienteController {
         } else {
             return null;
         }
+    }
 
+    @GetMapping("buscarpordni/{dni}")
+    public ResponseEntity<Paciente> buscarPacienteDni(@PathVariable String dni) {
+        Paciente paciente = pacienteService.buscarPacienteDni(dni);
+
+        return ResponseEntity.ok(paciente);
     }
 
     @PutMapping("/modificar")
