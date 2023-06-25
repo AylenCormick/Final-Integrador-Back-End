@@ -59,6 +59,14 @@ public class OdontologoServiceTest {
     }
 
     @Test
+    public void actualizarOdontologoTest() {
+        Odontologo od = new Odontologo("Ayelen", "Cormick", "11111");
+        od.setId(1);
+        odontologoService.actualizarOdontologo(od);
+        Assertions.assertTrue(od.getNombre() == "Ayelen");
+    }
+
+    @Test
     public void eliminarOdontologoTest() {
         boolean ret = odontologoService.eliminarOdontologo(2);
         Assertions.assertTrue(ret);

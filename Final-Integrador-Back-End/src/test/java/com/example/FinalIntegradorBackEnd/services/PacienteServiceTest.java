@@ -2,6 +2,7 @@ package com.example.FinalIntegradorBackEnd.services;
 
 import com.example.FinalIntegradorBackEnd.dto.PacienteDto;
 import com.example.FinalIntegradorBackEnd.entities.Domicilio;
+import com.example.FinalIntegradorBackEnd.entities.Odontologo;
 import com.example.FinalIntegradorBackEnd.entities.Paciente;
 
 import org.junit.Before;
@@ -80,6 +81,19 @@ public class PacienteServiceTest {
 
         Assertions.assertTrue(pacientes.size() > 0);
     }
+
+//    @Test
+//    public void actualizarPacienteTest() {
+//        Paciente pa = new Paciente();
+//        pa.setNombre("Ayelen");
+//        pa.setDomicilio(new Domicilio("Calle falsa", 123, "Una"));
+//        pa.setDni("12345678");
+//        pa.setFechaAlta(new Date(2023,6,30));
+//        pa.setId(1);
+//        pacienteService.actualizarPaciente(pa);
+//
+//        Assertions.assertTrue(pacienteService.buscarPaciente(1).get().getNombre() == "Ayelen");
+//    }
 
     @Test
     public void eliminarPacienteTest() {
